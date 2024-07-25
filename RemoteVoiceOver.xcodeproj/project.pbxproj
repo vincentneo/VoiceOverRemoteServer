@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF9E41962C51F8F000F50544 /* CGKeyCode_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E41952C51F8F000F50544 /* CGKeyCode_Extension.swift */; };
+		BF9E41982C52054D00F50544 /* MovementDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E41972C52054D00F50544 /* MovementDirection.swift */; };
+		BF9E419A2C52055F00F50544 /* VoiceOverListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E41992C52055F00F50544 /* VoiceOverListener.swift */; };
 		BFD6C6352C50BB5C004A55DC /* TestVoiceOverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C6342C50BB5C004A55DC /* TestVoiceOverApp.swift */; };
 		BFD6C6372C50BB5C004A55DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C6362C50BB5C004A55DC /* ContentView.swift */; };
 		BFD6C6392C50BB5D004A55DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C6382C50BB5D004A55DC /* Assets.xcassets */; };
 		BFD6C63C2C50BB5D004A55DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C63B2C50BB5D004A55DC /* Preview Assets.xcassets */; };
+		BFE969E62C514B06005A06C8 /* MacroExpress in Frameworks */ = {isa = PBXBuildFile; productRef = BFE969E52C514B06005A06C8 /* MacroExpress */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BFD6C6312C50BB5C004A55DC /* TestVoiceOver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVoiceOver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9E41952C51F8F000F50544 /* CGKeyCode_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGKeyCode_Extension.swift; sourceTree = "<group>"; };
+		BF9E41972C52054D00F50544 /* MovementDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementDirection.swift; sourceTree = "<group>"; };
+		BF9E41992C52055F00F50544 /* VoiceOverListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverListener.swift; sourceTree = "<group>"; };
+		BFD6C6312C50BB5C004A55DC /* RemoteVoiceOver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteVoiceOver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD6C6342C50BB5C004A55DC /* TestVoiceOverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVoiceOverApp.swift; sourceTree = "<group>"; };
 		BFD6C6362C50BB5C004A55DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFD6C6382C50BB5D004A55DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD6C63B2C50BB5D004A55DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BFD6C63D2C50BB5D004A55DC /* TestVoiceOver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestVoiceOver.entitlements; sourceTree = "<group>"; };
+		BFD6C63D2C50BB5D004A55DC /* RemoteVoiceOver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteVoiceOver.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE969E62C514B06005A06C8 /* MacroExpress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +44,7 @@
 		BFD6C6282C50BB5C004A55DC = {
 			isa = PBXGroup;
 			children = (
-				BFD6C6332C50BB5C004A55DC /* TestVoiceOver */,
+				BFD6C6332C50BB5C004A55DC /* RemoteVoiceOver */,
 				BFD6C6322C50BB5C004A55DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +52,24 @@
 		BFD6C6322C50BB5C004A55DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFD6C6312C50BB5C004A55DC /* TestVoiceOver.app */,
+				BFD6C6312C50BB5C004A55DC /* RemoteVoiceOver.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFD6C6332C50BB5C004A55DC /* TestVoiceOver */ = {
+		BFD6C6332C50BB5C004A55DC /* RemoteVoiceOver */ = {
 			isa = PBXGroup;
 			children = (
 				BFD6C6342C50BB5C004A55DC /* TestVoiceOverApp.swift */,
+				BF9E41992C52055F00F50544 /* VoiceOverListener.swift */,
 				BFD6C6362C50BB5C004A55DC /* ContentView.swift */,
+				BF9E41952C51F8F000F50544 /* CGKeyCode_Extension.swift */,
+				BF9E41972C52054D00F50544 /* MovementDirection.swift */,
 				BFD6C6382C50BB5D004A55DC /* Assets.xcassets */,
-				BFD6C63D2C50BB5D004A55DC /* TestVoiceOver.entitlements */,
+				BFD6C63D2C50BB5D004A55DC /* RemoteVoiceOver.entitlements */,
 				BFD6C63A2C50BB5D004A55DC /* Preview Content */,
 			);
-			path = TestVoiceOver;
+			path = RemoteVoiceOver;
 			sourceTree = "<group>";
 		};
 		BFD6C63A2C50BB5D004A55DC /* Preview Content */ = {
@@ -72,9 +83,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFD6C6302C50BB5C004A55DC /* TestVoiceOver */ = {
+		BFD6C6302C50BB5C004A55DC /* RemoteVoiceOver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFD6C6402C50BB5D004A55DC /* Build configuration list for PBXNativeTarget "TestVoiceOver" */;
+			buildConfigurationList = BFD6C6402C50BB5D004A55DC /* Build configuration list for PBXNativeTarget "RemoteVoiceOver" */;
 			buildPhases = (
 				BFD6C62D2C50BB5C004A55DC /* Sources */,
 				BFD6C62E2C50BB5C004A55DC /* Frameworks */,
@@ -84,9 +95,12 @@
 			);
 			dependencies = (
 			);
-			name = TestVoiceOver;
+			name = RemoteVoiceOver;
+			packageProductDependencies = (
+				BFE969E52C514B06005A06C8 /* MacroExpress */,
+			);
 			productName = TestVoiceOver;
-			productReference = BFD6C6312C50BB5C004A55DC /* TestVoiceOver.app */;
+			productReference = BFD6C6312C50BB5C004A55DC /* RemoteVoiceOver.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BFD6C62C2C50BB5C004A55DC /* Build configuration list for PBXProject "TestVoiceOver" */;
+			buildConfigurationList = BFD6C62C2C50BB5C004A55DC /* Build configuration list for PBXProject "RemoteVoiceOver" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,11 +127,14 @@
 				Base,
 			);
 			mainGroup = BFD6C6282C50BB5C004A55DC;
+			packageReferences = (
+				BFE969E42C514B06005A06C8 /* XCRemoteSwiftPackageReference "MacroExpress" */,
+			);
 			productRefGroup = BFD6C6322C50BB5C004A55DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFD6C6302C50BB5C004A55DC /* TestVoiceOver */,
+				BFD6C6302C50BB5C004A55DC /* RemoteVoiceOver */,
 			);
 		};
 /* End PBXProject section */
@@ -140,7 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD6C6372C50BB5C004A55DC /* ContentView.swift in Sources */,
+				BF9E41962C51F8F000F50544 /* CGKeyCode_Extension.swift in Sources */,
+				BF9E41982C52054D00F50544 /* MovementDirection.swift in Sources */,
 				BFD6C6352C50BB5C004A55DC /* TestVoiceOverApp.swift in Sources */,
+				BF9E419A2C52055F00F50544 /* VoiceOverListener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,22 +290,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TestVoiceOver/TestVoiceOver.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RemoteVoiceOver/RemoteVoiceOver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestVoiceOver/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteVoiceOver/Preview Content\"";
 				DEVELOPMENT_TEAM = 3X69W4AQD6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "This permission is required to communicate with VoiceOver";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2024 Vincent Neo";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vincent-neo.TestVoiceOver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vincent-neo.RemoteVoiceOverServer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -297,22 +320,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TestVoiceOver/TestVoiceOver.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RemoteVoiceOver/RemoteVoiceOver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestVoiceOver/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteVoiceOver/Preview Content\"";
 				DEVELOPMENT_TEAM = 3X69W4AQD6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "This permission is required to communicate with VoiceOver";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2024 Vincent Neo";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vincent-neo.TestVoiceOver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vincent-neo.RemoteVoiceOverServer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFD6C62C2C50BB5C004A55DC /* Build configuration list for PBXProject "TestVoiceOver" */ = {
+		BFD6C62C2C50BB5C004A55DC /* Build configuration list for PBXProject "RemoteVoiceOver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFD6C63E2C50BB5D004A55DC /* Debug */,
@@ -331,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFD6C6402C50BB5D004A55DC /* Build configuration list for PBXNativeTarget "TestVoiceOver" */ = {
+		BFD6C6402C50BB5D004A55DC /* Build configuration list for PBXNativeTarget "RemoteVoiceOver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFD6C6412C50BB5D004A55DC /* Debug */,
@@ -341,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFE969E42C514B06005A06C8 /* XCRemoteSwiftPackageReference "MacroExpress" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Macro-swift/MacroExpress.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFE969E52C514B06005A06C8 /* MacroExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFE969E42C514B06005A06C8 /* XCRemoteSwiftPackageReference "MacroExpress" */;
+			productName = MacroExpress;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFD6C6292C50BB5C004A55DC /* Project object */;
 }

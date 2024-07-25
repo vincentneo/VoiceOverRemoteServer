@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TestVoiceOverApp: App {
+struct RemoteVoiceOverApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
